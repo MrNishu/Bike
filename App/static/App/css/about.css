@@ -1,0 +1,99 @@
+* {
+     font-family: 'Times New Roman', Times, serif;
+
+     margin: 0;
+     padding: 0;
+}
+
+/* Home Section */
+
+#home {
+     display: flex;
+     flex-direction: column;
+     padding: 3px 200px;
+     height: 1000px;
+     justify-content: center;
+     align-items: center;
+}
+
+#home::before {
+     content: "";
+     position: absolute;
+     background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/octane/DXHJ3XYPKJEEXFKPOXDWKYJFN4.jpg');
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.90;
+
+}
+
+
+#services {
+     margin: 34px;
+     display: flex;
+
+}
+
+
+
+#services .box {
+     height: 65vh;
+     border: 3px solid orangered;
+     padding: 34px;
+     margin: 7px;
+     border-radius: 30px;
+     background-color: #f2f2f2;
+}
+
+
+
+#services .box img {
+
+     height: 100px;
+     display: block;
+     margin: auto;
+}
+
+
+.h-primary {
+     text-decoration: underline;
+     position: fixed;
+     color: white;
+     font-size: 4rem;
+     padding: 0;
+     right: 10%;
+}
+
+.h-secondary {
+     color: red;
+     font-size: 3rem;
+     padding: 12px;
+}
+
+.center {
+     text-align: center;
+}
+
+#submit_Btn {
+
+
+     margin: 10% 33%;
+     justify-content: center;
+     align-items: center;
+
+
+     font-size: 2rem;
+     font-family: 'Times New Roman', Times, serif;
+     cursor: pointer;
+     left: 300%;
+     display: flex;
+     height: 8vh;
+     width: 10vw;
+}
+
+#submit_Btn:hover {
+     border: 2px gray solid;
+     border-radius: 20px;
+     color: blue;
+
+}

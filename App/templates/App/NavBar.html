@@ -1,0 +1,47 @@
+{% load static %}
+
+{% block content %}
+{% endblock %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Bike Walah</title>
+      <link rel="stylesheet" href="{% static 'App/css/main.css' %}">
+
+      <style>
+            #Login{
+                  display: flex;
+                  position: absolute;
+                  border: 2px white solid;
+                  border-radius: 15px;
+                  right: 4%;
+            }
+      </style>
+
+
+</head>
+
+<body>
+
+      <body>
+
+            <nav id="navbar">
+                  <div id="logo">
+                        <a href="/"><img src="{% static 'App/img/BikeWalah_Logo.png' %}" alt="Image Not Found"></a>
+                  </div>
+
+                  <ul>
+                        <li class="items"><a href="/">Home</a></li>
+                        <li class="items"><a href="/s">Services</a></li>
+                        <li class="items"><a href="/a">About</a></li>
+                        <li class="items"><a href="/c">Contact Us</a></li>
+                        <li class="items" id="Login" ><a href="/adp">Admin Panal</a></li>
+                        
+                  </ul>
+
+            </nav>

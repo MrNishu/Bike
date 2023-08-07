@@ -1,0 +1,69 @@
+{% extends "App/NavBar.html" %}
+{% block content %}
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bike Walah</title>
+      <link rel="stylesheet" href="Main.html">
+      <link rel="stylesheet" href="{% static 'App/css/Contact.css' %}">
+</head>
+
+
+<body>
+
+      <section id="Contactectioin">
+
+            <div class="D7">
+
+
+
+                  <img src="{% static 'App/img/cntact.png' %}" alt="Image Not Foun" id="Login_img" class="ContactIMG">
+
+            </div>
+            <form action="" method="POST"> {% csrf_token %}
+
+                  <input type="text" placeholder="Full Name" id="FN" class="inputs" name="FullNames"> <br> <br>
+
+                  <input type="email" placeholder="E-Mail" id="EM" class="inputs" name="Emails"> <br> <br>
+<!-- 
+                  <input type="number" placeholder="Number" id="P" class="inputs"> <br> <br> -->
+
+                  <input type="text" id="D" class="inputs" placeholder="Querry" name="Querries"><br><br>
+
+                  <!-- <input type="date" id="DOB" placeholder="DOB" class="inputs"> <br> <br> -->
+
+                  <!-- <select name="" id="G" class="Btn" name="Genders"> 
+                        <optgroup>
+                              <option value="" selected>Gender</option>
+                              <option value="">Male</option>
+                              <option value="">Female</option>
+                              <option value="">Transgender</option>
+                              <option value="">Other</option>
+                        </optgroup> -->
+                        <br><br>
+                  <input type="text" id="D" class="inputs" placeholder="Gender" name="Genders"><br><br>
+                  </select>
+                  <br>
+                  <center>
+                        <input type="submit" id="Btn1" class="Btn">
+                        <input type="reset" id="Btn2" class="Btn">
+                  </center>
+            </form>
+
+            </div>
+
+
+            </div>
+      </section>
+
+</body>
+
+</html>
+
+{% endblock %}
